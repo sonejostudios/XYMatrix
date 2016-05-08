@@ -1,6 +1,6 @@
 declare name        "XYMatrix";
 declare version     "1.0";
-declare author      "Vincent Rateau";
+declare author      "Vincent Rateau, GRAME";
 declare license     "GPL v3";
 declare reference   "www.sonejo.net";
 declare description	"XY Surround Matrix for one Source (Mono Input) with 4 Outputs (Left, Right, Surround Left, Surround Right) and Position Lock.";
@@ -21,10 +21,10 @@ xymatrix = _ <: vgroup("Controls", sigx : sigy) : routing <: _,_,_,_, (graphs:>_
 with{
 	//matrix gains
 	sigx = signalx, signalx;
-	signalx(a, b) = (a*(1-xpos)), (a*(xpos));
+	signalx(a, b) = (a*(1-xpos:sqrt)), (a*(xpos:sqrt));
 	
 	sigy(a,b,c,d) = ((a,c) : signaly), ((b,d) : signaly);
-	signaly(a, b) = (b*(1-ypos)), (b*(ypos));
+	signaly(a, b) = (b*(1-ypos:sqrt)), (b*(ypos:sqrt));
 
 	//gui
 	xpos = hslider("xpos[midi: ctrl 1]", 0, 0, 1, 0.01) : SH(lock) : smooth(0.999) : hbargraph("X", 0, 1);
