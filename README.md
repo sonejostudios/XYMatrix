@@ -5,7 +5,7 @@ XY Surround Matrix for one Source (Mono Input) with 4 Outputs (Left, Right, Surr
 
 It takes one input (mono) source and spread the sound between 4 ouputs acording to the xy position.
 
-Use an XY controller for best workflow (e.g Cadence XY-Controller)
+Use an XY controller for best workflow (e.g Cadence XY-Controller, Midi XY-Controller,...)
 
 Midi Bindings: xpos[midi: ctrl 1] , ypos[midi: ctrl 2]
 
