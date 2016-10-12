@@ -2,7 +2,6 @@ declare name        "XYMatrix";
 declare version     "1.0";
 declare author      "Vincent Rateau, GRAME";
 declare license     "GPL v3";
-declare reference   "www.sonejo.net";
 declare description	"XY Surround Matrix for one Source (Mono Input) with 4 Outputs (Left, Right, Surround Left, Surround Right) and Position Lock.";
 
 
