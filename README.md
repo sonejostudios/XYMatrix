@@ -3,7 +3,7 @@ XY Surround Matrix for one Source (Mono Input) with 4 Outputs (Left, Right, Surr
 
 ![screenshot](https://raw.githubusercontent.com/sonejostudios/XYMatrix/master/xy.png "XYMatrix controlled with Cadence XY-Controller")
 
-It takes one input (mono) source and spread the sound between 4 ouputs acording to the xy position.
+It takes one input (mono) source and spread the sound between 4 ouputs according to the xy position.
 
 Use an XY controller for best workflow (e.g Cadence XY-Controller, Midi XY-Controller,...)
 
